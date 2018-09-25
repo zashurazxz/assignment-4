@@ -168,11 +168,13 @@ footer a:hover{
   background: #232323;
   position: relative;
   overflow: hidden;
+  background-image: url("../img/bush.jpg");
+  background-size: cover;
 }
 
 .card > p {
-  color: white;
-  margin: 80px 20px;
+  color: black;
+  /* margin: 80px 20px; */
   transition: 0.2s; 
   transform: translate(0px, 60px)
 }
@@ -182,7 +184,7 @@ footer a:hover{
   transform: translate(0px, 0px)
 }
 
-.card-content {
+/* .card-content {
   background: #232323;
   height: 60px;
   position: absolute;
@@ -195,10 +197,10 @@ footer a:hover{
   display:flex;
   justify-content: flex-end;
   align-items: center;
-}
+} */
 
 .card:hover .card-content {
-  transform: translate(0px, 0px)
+  transform: translate(0px, 0px);
 }
 
 .card-content i {
@@ -208,19 +210,20 @@ footer a:hover{
 .card-content p {
   margin-right: auto;
   transition: 0.3s;
-  transform: translate(0px, 60px)
+  transform: translate(0px, 60px);
 }
 .card:hover .card-content p {
-  transform: translate(0px, 0px)
+  transform: translate(0px, 0px);
+  color: black;
 }
 
 .card i {
   transition: 0.3s;
-  transform: translate(0px, 60px)
+  transform: translate(0px, 60px);
 }
 
 .card:hover i {
-  transform: translate(0px, 0px)
+  transform: translate(0px, 0px);
 }
 
 .card i:nth-child(1) {
@@ -233,4 +236,36 @@ footer a:hover{
 
 .card i:nth-child(3) {
   transition-delay: 0.2s;
+}
+
+
+
+
+
+.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-outline-out:hover:before, 
+.hvr-outline-out:focus:before, 
+.hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
 }
