@@ -116,6 +116,7 @@ body{
 }
 /* this is the end of the hamburger menu */
 
+
 .nav {
   margin-left: 60px;
   display: flex;
@@ -129,14 +130,14 @@ body{
 }
 .wrapper p{
   margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 20                                                                0px;
   display: inline-block;
   text-align: justify;
 }
 
 footer {
   width: 100%;
-  /* position: absolute; */
+  position: absolute;
   position: static;
   bottom: 20px;
   margin-top: auto;
@@ -184,8 +185,7 @@ footer a:hover{
   transform: translate(0px, 0px)
 }
 
-/* .card-content {
-  background: #232323;
+.card-content {
   height: 60px;
   position: absolute;
   bottom: 0;
@@ -197,7 +197,7 @@ footer a:hover{
   display:flex;
   justify-content: flex-end;
   align-items: center;
-} */
+}
 
 .card:hover .card-content {
   transform: translate(0px, 0px);
@@ -238,32 +238,39 @@ footer a:hover{
   transition-delay: 0.2s;
 }
 
-
+.about-image{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-image: url("../img/moon.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
 
 
 
 .hvr-outline-out {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0.5px rgb(49, 1, 105);
   position: relative;
 }
 .hvr-outline-out:hover:before, 
 .hvr-outline-out:focus:before, 
 .hvr-outline-out:active:before {
   top: -8px;
-  right: -8px;
+  right: 10px;
   bottom: -8px;
   left: -8px;
 }
 .hvr-outline-out:before {
   content: '';
   position: absolute;
-  border: #e1e1e1 solid 4px;
+  border: #e1e1e1 solid 2px;
   top: 0;
-  right: 0;
+  right: 8px;
   bottom: 0;
   left: 0;
   transition-duration: 0.3s;
