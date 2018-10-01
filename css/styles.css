@@ -114,8 +114,8 @@ body{
 #menu i{
   color: #232323;
 }
-/* this is the end of the hamburger menu */
 
+/* this is the end of the hamburger menu */
 
 .nav {
   margin-left: 60px;
@@ -128,6 +128,7 @@ body{
   display: flex;
   align-items: center;
 }
+
 .wrapper p{
   margin-left: 200px;
   margin-right: 20                                                                0px;
@@ -155,7 +156,9 @@ footer a{
 footer a:hover{
   color: tomato;
 }
+
 /* product cards and animation */
+
 .card {
   display: inline-block;
   height: 300px;
@@ -208,6 +211,7 @@ footer a:hover{
   transition: 0.3s;
   transform: translate(0px, 60px);
 }
+
 .card:hover .card-content p {
   transform: translate(0px, 0px);
   color: black;
@@ -235,6 +239,7 @@ footer a:hover{
 }
 
 /* messing around with hero image */
+
 .products-image{
   margin: 0;
   padding: 0;
@@ -252,6 +257,7 @@ footer a:hover{
   box-shadow: 0 0 0.5px rgb(49, 1, 105);
   position: relative;
 }
+
 .hvr-outline-out:hover:before, 
 .hvr-outline-out:focus:before, 
 .hvr-outline-out:active:before {
@@ -260,6 +266,7 @@ footer a:hover{
   bottom: -8px;
   left: -8px;
 }
+
 .hvr-outline-out:before {
   content: '';
   position: absolute;
@@ -273,6 +280,7 @@ footer a:hover{
 }
 
 /* this is the contact pages input field */
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -284,7 +292,6 @@ input[type=text], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-  
 }
 
 input[type=submit] {
@@ -304,6 +311,7 @@ input[type=submit]:hover {
 textarea{
   height: 480px;
 }
+
 .container {
   box-sizing: border-box;
   margin: 20px;
@@ -331,9 +339,9 @@ textarea{
 }
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-      width: 95%;
-      margin-top: 0;
+.col-25, .col-75, input[type=submit] {
+  width: 95%;
+  margin-top: 0;
   }
 }
 
@@ -356,7 +364,7 @@ textarea{
 }
 
 .blog-card:hover {
-  color: #5ad67d;
+  color: tomato
 }
 
 .photo:hover {
@@ -375,9 +383,26 @@ textarea{
   right: 0;
   bottom: 0;
   left: 0;
+  background-image: url(../img/cabin.jpg);
   background-size: cover;
   background-position: center;
   transition: transform .2s;
+}
+
+.photo2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/flower.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform .2s;
+}
+
+.photo2:hover {
+  transform: scale(1.3) rotate(3deg);
 }
 
 .details,.details ul {
@@ -409,19 +434,19 @@ textarea{
 }
 
 .author:before {
-  font-family: FontAwesome;
+  font-family: "Avenir Next", "Avenir", sans-serif;
   margin-right: 10px;
   content: "\f007";
 }
 
 .date:before {
-  font-family: FontAwesome;
+  font-family: "Avenir Next", "Avenir", sans-serif;
   margin-right: 10px;
   content: "\f133";
 }
 
 .tags ul:before {
-  font-family: FontAwesome;
+  font-family: "Avenir Next", "Avenir", sans-serif;
   content: "\f02b";
   margin-right: 10px;
 }
@@ -464,14 +489,14 @@ textarea{
 }
 
 .read-more a {
-  color: lightsalmon;
+  color: tomato;
   display: inline-block;
   position: relative;
 }
 
 .read-more a:after {
   content: "\f061";
-  font-family: FontAwesome;
+  font-family: "Avenir Next", "Avenir", sans-serif;
   margin-left: -10px;
   opacity: 0;
   vertical-align: middle;
@@ -500,7 +525,7 @@ textarea{
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
-  }
+}
 
 .details:hover {
   left: 0%;
@@ -545,3 +570,4 @@ flex-direction: row-reverse;
 .details {
   padding-left: 25px;
 }
+
