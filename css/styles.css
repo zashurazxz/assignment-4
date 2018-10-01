@@ -233,6 +233,7 @@ footer a:hover{
 .card i:nth-child(3) {
   transition-delay: 0.2s;
 }
+
 /* messing around with hero image */
 .products-image{
   margin: 0;
@@ -403,7 +404,7 @@ textarea{
   text-decoration: dotted underline
 }
 
-ul li {
+.details ul li {
   display: inline-block;
 }
 
